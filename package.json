@@ -1,33 +1,32 @@
 {
-  "name": "infusionsoft-api",
-  "version": "0.6.0",
-  "description": "Javscript wrapper for the Infusionsoft API",
+  "name": "infusionsoft-javascript-api",
+  "version": "0.1.0",
+  "description": "Javscript wrapper for the Infusionsoft XML-RPC API",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:bvalosek/infusionsoft-api"
+    "url": "git@github.com:justinhandley/infusionsoft-javascript-api"
   },
   "keywords": [
     "infusionsoft",
     "api"
   ],
-  "author": "Brandon Valosek",
+  "author": "Justin Handley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bvalosek/infusionsoft-api/issues"
+    "url": "https://github.com/justinhandley/infusionsoft-javascript-api/issues"
   },
   "dependencies": {
-    "typedef": "~0.13.2",
-    "xmlrpc": "~1.1.0",
-    "underscore": "~1.5.1",
+    "inflection": "~1.2.6",
     "q": "~0.9.6",
-    "inflection": "~1.2.6"
+    "typedef": "~0.13.2",
+    "underscore": "~1.5.1",
+    "xmlrpc": "~1.1.0"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.2",
-    "grunt-infusionsoft": "~0.6.1"
+    "grunt-contrib-jshint": "~0.6.2"
   }
 }

@@ -1,17 +1,15 @@
-# Infusionsoft API
+# Infusionsoft Javascript API
 
-A promise-driven, fluent-style Node.js wrapper for the XML-RPC [Infusionsoft API](http://help.infusionsoft.com/developers/api-basics).
+A promise-driven, fluent-style Node.js wrapper for the XML-RPC [Infusionsoft API](https://developer.infusionsoft.com/docs/xml-rpc).
 
-Write badass Infusionsoft apps on the server that are fully and natively asynchronous.
-
-It's pretty dope.
+Extended from Bvalosek's awesome but largely abandoned [Infusionsoft API](https://github.com/bvalosek/infusionsoft-api)
 
 ## Usage
 
 Install via `npm`:
 
 ```
-$ npm install infusionsoft-api
+$ npm install infusionsoft-javascript-api
 ```
 
 Do cool stuff:
@@ -51,15 +49,6 @@ Promises are glorious and make writing heavily asynchronous code much less
 awful than it would otherwise be.
 
 See the **More Examples** section to see them in action.
-
-
-## API Scraper
-
-This project creates interfaces and classes for the API services and tables via
-the [grunt-infusionsoft](http://github.com/bvalosek/grunt-infusionsoft) grunt
-plugin. To recreate the generated files, run `grunt infusionsoft`.
-
-Check out the `infusionsoft` directory to see the output.
 
 ## More Examples
 
@@ -213,7 +202,8 @@ function.
 
 
 ## License
-Copyright 2013 Brandon Valosek
+Copyright (c) 2013, Brandon Valosek
+Modified work Copyright 2018 Justin Handley
 
-**Infusionsoft API** is released under the MIT license.
+**Infusionsoft Javascript API** is released under the MIT license.
 
