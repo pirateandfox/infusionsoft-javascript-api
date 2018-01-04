@@ -49,7 +49,7 @@ module.exports = IContactService = require('typedef')
         sequenceStepId) {},
 
   // Link two contacts
-  __xmlrpc__linkContacts: function(apiKey, contactId1, contactId2, linkId)
+  __xmlrpc__linkContacts: function(apiKey, contactId1, contactId2, linkId) {},
 
     // Runs an action set on a given contact record
     __xmlrpc__runActionSequence: function(apiKey, contactId, actionSetId) {},
