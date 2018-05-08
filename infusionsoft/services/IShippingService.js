@@ -12,26 +12,26 @@ module.exports = IShippingService = require('typedef')
     __xmlrpc__getAllShippingOptions: function(apiKey) {},
 
     // Returns the options and values of the flat rate shipping option provided
-    __xmlrpc__getFlatRateShippingOption: function(apiKey, optionId) {},
+    __xmlrpc__getFlatRateShippingOption: function(optionId) {},
 
     // Returns the options and values of the order total shipping option provided
-    __xmlrpc__getOrderTotalShippingOption: function(apiKey, optionId) {},
+    __xmlrpc__getOrderTotalShippingOption: function(optionId) {},
 
     // Returns the options and values of the order total shipping ranges option
     // provided
-    __xmlrpc__getOrderTotalShippingRanges: function(apiKey, optionId) {},
+    __xmlrpc__getOrderTotalShippingRanges: function(optionId) {},
 
     // Returns the options and values of the product based shipping option provided
-    __xmlrpc__getProductBasedShippingOption: function(apiKey, optionId) {},
+    __xmlrpc__getProductBasedShippingOption: function(optionId) {},
 
     // Returns the options and values of the order quantity shipping option
     // provided
-    __xmlrpc__getOrderQuantityShippingOption: function(apiKey, optionId) {},
+    __xmlrpc__getOrderQuantityShippingOption: function(optionId) {},
 
     // Returns the options and values of the weight based shipping option provided
-    __xmlrpc__getWeightBasedShippingOption: function(apiKey, optionId) {},
+    __xmlrpc__getWeightBasedShippingOption: function(optionId) {},
 
     // Returns the options and values of the ups shipping option provided
-    __xmlrpc__getUpsShippingOption: function(apiKey, optionId) {}
+    __xmlrpc__getUpsShippingOption: function(optionId) {}
 
 });

@@ -11,6 +11,6 @@ module.exports = IWebFormService = require('typedef')
     __xmlrpc__getMap: function(apiKey) {},
 
     // This retrieves the HTML for the given web form
-    __xmlrpc__getHTML: function(apiKey, webFormId) {}
+    __xmlrpc__getHTML: function(webFormId) {}
 
 });

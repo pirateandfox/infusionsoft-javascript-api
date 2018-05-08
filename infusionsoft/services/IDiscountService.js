@@ -9,28 +9,28 @@ module.exports = IDiscountService = require('typedef')
 .interface('IDiscountService') .define({
 
     // Adds a Free trial
-    __xmlrpc__addFreeTrial: function(apiKey, name, description,
+    __xmlrpc__addFreeTrial: function(name, description,
         freeTrialDays, hidePrice, subscriptionPlanId) {},
 
     // Returns the options and values of the free trial id passed
-    __xmlrpc__getFreeTrial: function(apiKey, trialId) {},
+    __xmlrpc__getFreeTrial: function(trialId) {},
 
     // Adds a order total discount
-    __xmlrpc__addOrderTotalDiscount: function(apiKey, name, description,
+    __xmlrpc__addOrderTotalDiscount: function(name, description,
         applyDiscountToCommission, percentOrAmt, amt, payType) {},
 
     // Adds a order total discount
-    __xmlrpc__getOrderTotalDiscount: function(apiKey, id) {},
+    __xmlrpc__getOrderTotalDiscount: function(id) {},
 
     // Adds a category discount
-    __xmlrpc__addCategoryDiscount: function(apiKey, name, description,
+    __xmlrpc__addCategoryDiscount: function(name, description,
         applyDiscountToCommission, amt) {},
 
     // Returns the options and values of the category discount id passed
-    __xmlrpc__getCategoryDiscount: function(apiKey, id) {},
+    __xmlrpc__getCategoryDiscount: function(id) {},
 
     // Assigns a product to a category discount
-    __xmlrpc__addCategoryAssignmentToCategoryDiscount: function(apiKey, id,
+    __xmlrpc__addCategoryAssignmentToCategoryDiscount: function(id,
         productId) {},
 
     // Returns the options and values of the category assignment for category
@@ -39,17 +39,17 @@ module.exports = IDiscountService = require('typedef')
         id) {},
 
     // Add a product total discount
-    __xmlrpc__addProductTotalDiscount: function(apiKey, name, description,
+    __xmlrpc__addProductTotalDiscount: function(name, description,
         applyDiscountToCommission, productId, percentOrAmt, amt) {},
 
     // Returns the options and values of the product total discount id passed
-    __xmlrpc__getProductTotalDiscount: function(apiKey, id) {},
+    __xmlrpc__getProductTotalDiscount: function(id) {},
 
     // Adds a shipping total discount
-    __xmlrpc__addShippingTotalDiscount: function(apiKey, name, description,
+    __xmlrpc__addShippingTotalDiscount: function(name, description,
         applyDiscountToCommission, percentOrAmt, amt) {},
 
     // Returns the options and values of the shipping total discount id passed
-    __xmlrpc__getShippingTotalDiscount: function(apiKey, id) {}
+    __xmlrpc__getShippingTotalDiscount: function(id) {}
 
 });

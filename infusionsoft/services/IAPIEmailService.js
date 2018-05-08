@@ -10,7 +10,7 @@ module.exports = IAPIEmailService = require('typedef')
 .interface('IAPIEmailService') .define({
 
     // Create a new email template that can be used for future emails
-    __xmlrpc__addEmailTemplate: function(apiKey, pieceTitle, categories,
+    __xmlrpc__addEmailTemplate: function(pieceTitle, categories,
         fromAddress, toAddress, ccAddress, bccAddress, subject, textBody,
         htmlBody, contentType, mergeContext) {},
 
@@ -18,40 +18,40 @@ module.exports = IAPIEmailService = require('typedef')
     // actually send the email, it only places an item into the email history.
     // Using the API to instruct Infusionsoft to send an email will handle this
     // automatically.
-    __xmlrpc__attachEmail: function(apiKey, contactId, fromName,
+    __xmlrpc__attachEmail: function(contactId, fromName,
         fromAddress, toAddress, ccAddresses, bccAddresses, contentType,
         subject, htmlBody, textBody, header, receivedDate, sentDate,
         emailSentType) {},
 
     // This retrieves all possible merge fields for the context provided
-    __xmlrpc__getAvailableMergeFields: function(apiKey, mergeContext) {},
+    __xmlrpc__getAvailableMergeFields: function(mergeContext) {},
 
     // Retrieves the details for a particular email template
-    __xmlrpc__getEmailTemplate: function(apiKey, templateId) {},
+    __xmlrpc__getEmailTemplate: function(templateId) {},
 
     //  
-    __xmlrpc__getOptStatus: function(apiKey, email) {},
+    __xmlrpc__getOptStatus: function(email) {},
 
     // This method opts-in an email address. This method only works the first time
     // an email address opts-in
-    __xmlrpc__optIn: function(apiKey, email, optInReason) {},
+    __xmlrpc__optIn: function(email, optInReason) {},
 
     // Opts-out an email address. Note that once an address is opt-out, the API
     // cannot opt it back in
-    __xmlrpc__optOut: function(apiKey, email, optOutreason) {},
+    __xmlrpc__optOut: function(email, optOutreason) {},
 
     // This will send an email to a list of contacts, as well as record the email
     // in the contacts' email history
-    __xmlrpc__sendEmail: function(apiKey, contactList, fromAddress,
+    __xmlrpc__sendEmail: function(contactList, fromAddress,
         toAddress, ccAddresses, bccAddresses, contentType, subject, htmlBody,
         textBody, _templateId) {},
 
     // This will send an email to a list of contacts, as well as record the email
     // in the contacts' email history
-    __xmlrpc__sendTemplate: function(apiKey, contactList, templateId) {},
+    __xmlrpc__sendTemplate: function(contactList, templateId) {},
 
     // This method is used to update an already existing email template
-    __xmlrpc__updateEmailTemplate: function(apiKey, templateId, pieceTitle,
+    __xmlrpc__updateEmailTemplate: function(templateId, pieceTitle,
         category, fromAddress, toAddress, ccAddress, bccAddresses, subject,
         textBody, htmlBody, contentType, mergeContext) {}
 

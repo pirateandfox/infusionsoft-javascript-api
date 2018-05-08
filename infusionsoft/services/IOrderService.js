@@ -10,7 +10,7 @@ module.exports = IOrderService = require('typedef')
     // Returns the result of order placement. The ids of the order and invoice
     // that were created are returned along with the status of a credit card
     // charge if one was made.
-    __xmlrpc__placeOrder: function(apiKey, contactId, creditCardId,
+    __xmlrpc__placeOrder: function(contactId, creditCardId,
         payPlanId, productIds, subscriptionPlanIds, processSpecials,
         promoCodes, _leadAffiliatedId, _affiliatedId) {}
 

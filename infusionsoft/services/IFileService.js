@@ -9,20 +9,20 @@ module.exports = IFileService = require('typedef')
 .interface('IFileService') .define({
 
     // This method retrieves the file data for the given ID number.
-    __xmlrpc__getFile: function(apiKey, FileId) {},
+    __xmlrpc__getFile: function(FileId) {},
 
     // This method will return a string of the download URL for the given file.
-    __xmlrpc__getDownloadUrl: function(apiKey, FileId) {},
+    __xmlrpc__getDownloadUrl: function(FileId) {},
 
     // This method uploads the file to Infusionsoft. The optional contactId
     // parameter is used to place the file in a specific contact's filebox.
-    __xmlrpc__uploadFile: function(apiKey, FileName, Base64EncodedData,
+    __xmlrpc__uploadFile: function(FileName, Base64EncodedData,
         _ContactId) {},
 
     // This method will return a string of the download URL for the given file.
-    __xmlrpc__replaceFile: function(apiKey, FileId, Base64EncodedData) {},
+    __xmlrpc__replaceFile: function(FileId, Base64EncodedData) {},
 
     // This method will return a string of the download URL for the given file.
-    __xmlrpc__renameFile: function(apiKey, FileId, fileName) {}
+    __xmlrpc__renameFile: function(FileId, fileName) {}
 
 });

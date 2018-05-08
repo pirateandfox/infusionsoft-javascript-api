@@ -8,7 +8,7 @@ module.exports = IFunnelService = require('typedef')
 .interface('IFunnelService') .define({
 
     // Returns the result of a goal being achieved.
-    __xmlrpc__achieveGoal: function(apiKey, Integration, CallName,
+    __xmlrpc__achieveGoal: function(Integration, CallName,
         contactId) {}
 
 });

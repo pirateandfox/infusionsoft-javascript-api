@@ -11,41 +11,41 @@ module.exports = IDataService = require('typedef')
 .interface('IDataService') .define({
 
     // Adds a record to the specified table in Infusionsoft.
-    __xmlrpc__add: function(apiKey, table, values) {},
+    __xmlrpc__add: function(table, values) {},
 
     // Loads a struct with data from the given database record
-    __xmlrpc__load: function(apiKey, table, recordId, wantedFields) {},
+    __xmlrpc__load: function(table, recordId, wantedFields) {},
 
     // Updates the specified record (indicated by ID) with the data provided
-    __xmlrpc__update: function(apiKey, table, Id, values) {},
+    __xmlrpc__update: function(table, Id, values) {},
 
     // Deletes the specified record in the given table from the database
-    __xmlrpc__delete: function(apiKey, table, Id) {},
+    __xmlrpc__delete: function(table, Id) {},
 
     // This will locate all records in a given table that match the criteria for a
     // given field
-    __xmlrpc__findByField: function(apiKey, table, limit, page, fieldName,
+    __xmlrpc__findByField: function(table, limit, page, fieldName,
         fieldValue, returnFields) {},
 
     // Performs a query across the given table based on the query data
-    __xmlrpc__query: function(apiKey, table, limit, page, queryData,
+    __xmlrpc__query: function(table, limit, page, queryData,
         selectedFields) {},
 
     // Creates a new custom fields within Infusionsoft
-    __xmlrpc__addCustomField: function(apiKey, customFieldType,
+    __xmlrpc__addCustomField: function(customFieldType,
         displayName, dataType, headerId) {},
 
     // This method is used to authenticate an Infusionsoft username and
     // password(md5 hash). If the credentials match it will return back a User ID,
     // if the credentials do not match it will send back an error message
-    __xmlrpc__authenticateUser: function(apiKey, username, passwordHash) {},
+    __xmlrpc__authenticateUser: function(username, passwordHash) {},
 
     // This method will return back the data currently configured in a user
     // configured application setting
-    __xmlrpc__getAppSetting: function(apiKey, module, setting) {},
+    __xmlrpc__getAppSetting: function(module, setting) {},
 
     // Returns an iCalendar entry for the given appointment
-    __xmlrpc__getAppointmentCal: function(apiKey, appointmentId) {},
+    __xmlrpc__getAppointmentCal: function(appointmentId) {},
 
     // Returns a temporary API key which is valid for one hour if given a valid
     // Vendor key and user credentials. For security, never store a users password
@@ -57,6 +57,6 @@ module.exports = IDataService = require('typedef')
     // Updates a custom field. Every field can have it's display name and group id
     // changed, but only certain data types will allow you to change
     // values(dropdown, listbox, radio, etc)
-    __xmlrpc__updateCustomField: function(apiKey, customFieldId, values) {}
+    __xmlrpc__updateCustomField: function(customFieldId, values) {}
 
 });

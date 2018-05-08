@@ -15,29 +15,29 @@ module.exports = IAffiliateService = require('typedef')
     // The affClawbacks method is used when you need to retrieve all clawed back
     // commissions for a particular affiliate. Claw backs typically occur when an
     // order has been refunded to the customer
-    __xmlrpc__affClawbacks: function(apiKey, affiliateId, filterStartDate,
+    __xmlrpc__affClawbacks: function(affiliateId, filterStartDate,
         filterEndDate) {},
 
     // This method is used to retrieve all commissions for a specific affiliate
     // within a date range
-    __xmlrpc__affCommissions: function(apiKey, affiliateId,
+    __xmlrpc__affCommissions: function(affiliateId,
         filterStartDate, filterEndDate) {},
 
     // Gets a list of the Redirect Links for the specified Affiliate.
-    __xmlrpc__getRedirectLinksForAffiliate: function(apiKey, affiliateId) {},
+    __xmlrpc__getRedirectLinksForAffiliate: function(affiliateId) {},
 
     // This method is used to retrieve all payments for a specific affiliate
     // within a date range
-    __xmlrpc__affPayouts: function(apiKey, affiliateId, filterStartDate,
+    __xmlrpc__affPayouts: function(affiliateId, filterStartDate,
         filterEndDate) {},
 
     // The affRunningTotals method is used to retrieve the current balances for
     // Amount Earned, Clawbacks, and Running Balance.
-    __xmlrpc__affRunningTotals: function(apiKey, affiliateIds) {},
+    __xmlrpc__affRunningTotals: function(affiliateIds) {},
 
     // The affSummary method is used to retrieve a summary of statistics for a
     // list of affiliates
-    __xmlrpc__affSummary: function(apiKey, affiliateId, filterStartDate,
+    __xmlrpc__affSummary: function(affiliateId, filterStartDate,
         filterEndDate) {}
 
 });

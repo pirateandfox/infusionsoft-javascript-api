@@ -13,27 +13,27 @@ module.exports = ISearchService = require('typedef')
 
     // Gets all possible fields/columns available for return on a saved
     // search/report
-    __xmlrpc__getAllReportColumns: function(apiKey, savedSearchId, userId) {},
+    __xmlrpc__getAllReportColumns: function(savedSearchId, userId) {},
 
     // Runs a saved search/report and returns all possible fields
     __xmlrpc__getSavedSearchResultsAllFields: function(apiKey,
         savedSearchId, userId, pageNumber) {},
 
     // Runs a saved search/report returning only the specified fields
-    __xmlrpc__getSavedSearchResults: function(apiKey, savedSearchId,
+    __xmlrpc__getSavedSearchResults: function(savedSearchId,
         userId, pageNumber, returnFields) {},
 
     // This is used to find what possible quick searches the given user has access
     // to
-    __xmlrpc__getAvailableQuickSearches: function(apiKey, userId) {},
+    __xmlrpc__getAvailableQuickSearches: function(userId) {},
 
     // This allows you to run a quick search via the API. The quick search is the
     // search bar in the upper right hand corner of the Infusionsoft application
-    __xmlrpc__quickSearch: function(apiKey, quickSearchType, userId,
+    __xmlrpc__quickSearch: function(quickSearchType, userId,
         searchData, page, returnLimit) {},
 
     // Retrieves the quick search type that the given users has set as their
     // default
-    __xmlrpc__getDefaultQuickSearch: function(apiKey, userId) {}
+    __xmlrpc__getDefaultQuickSearch: function(userId) {}
 
 });

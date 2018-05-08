@@ -9,25 +9,25 @@ module.exports = IProductService = require('typedef')
 .interface('IProductService') .define({
 
     // Returns a product inventory provided the Id
-    __xmlrpc__getInventory: function(apiKey, productId) {},
+    __xmlrpc__getInventory: function(productId) {},
 
     // Increments the inventory by one product, provided you pass the productId to
     // increment withy
-    __xmlrpc__incrementInventory: function(apiKey, productId) {},
+    __xmlrpc__incrementInventory: function(productId) {},
 
     // Decrements the inventory by one product, provided you pass the productId to
     // decrement with
-    __xmlrpc__decrementInventory: function(apiKey, productId) {},
+    __xmlrpc__decrementInventory: function(productId) {},
 
     // Increases the inventory with a particular product by the quantity you
     // specify
-    __xmlrpc__increaseInventory: function(apiKey, productId, quantity) {},
+    __xmlrpc__increaseInventory: function(productId, quantity) {},
 
     // Decreases the inventory with a particular product by the quantity you
     // specify
-    __xmlrpc__decreaseInventory: function(apiKey, productId, quantity) {},
+    __xmlrpc__decreaseInventory: function(productId, quantity) {},
 
     // Deactivates the specified Credit Card
-    __xmlrpc__deactivateCreditCard: function(apiKey, creditCardId) {}
+    __xmlrpc__deactivateCreditCard: function(creditCardId) {}
 
 });
