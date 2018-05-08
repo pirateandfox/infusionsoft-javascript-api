@@ -4,6 +4,8 @@ A promise-driven, fluent-style Node.js wrapper for the XML-RPC [Infusionsoft API
 
 Extended from Bvalosek's awesome but largely abandoned [Infusionsoft API](https://github.com/bvalosek/infusionsoft-api)
 
+Updated to work from the current Oauth token system, not the legacy App Id / Key pair.
+
 ## Usage
 
 Install via `npm`:
@@ -12,13 +14,16 @@ Install via `npm`:
 $ npm install infusionsoft-javascript-api
 ```
 
-Do cool stuff:
+Set it up by providing a valid Oauth token to instantiate DataContext:
 
 ```javascript
 var api = require('infusionsoft-api');
 
-var infusionsoft = new api.DataContext('myapp', 'MY_API_KEY');
+var infusionsoft = new api.DataContext('VALID_AUTH_TOKEN');
+```
 
+Then, work your Infusionsoft magic:
+```javascript 
 infusionsoft.Contacts
     .where(Contact.FirstName, 'Brandon')
     .like(Contact.LastName, 'V%')
@@ -31,14 +36,14 @@ infusionsoft.Contacts
     });
 ```
 
-You can also use the API Services directly:
+You can also use API Services directly:
 
 ```javascript
 infusionsoft.ContactService
     .findByEmail('brandon@aol.com', ['Id', 'FirstName', 'LastName']);
 ```
 
-Awesome.
+Very cool.
 
 ## Promises
 
@@ -52,11 +57,10 @@ See the **More Examples** section to see them in action.
 
 ## More Examples
 
-All examples use `infusionsoft` as an instantiated DataContext with your app
-name and API key. ie:
+All examples use `infusionsoft` as an instantiated DataContext with your Oauth Token. ie:
 
 ```javascript
-var infusionsoft = new api.DataContext('myAppName', 'MY_API_KEY');
+var infusionsoft = new api.DataContext('MY_OAUTH_TOKEN');
 ```
 
 ### Get monthly revenue from a particular month
