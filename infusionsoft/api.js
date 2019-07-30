@@ -10,7 +10,7 @@ module.exports = api =
     {
         IAPIEmailService: require('./services/IAPIEmailService'),
         IAffiliateProgramService: require('./services/IAffiliateProgramService'),
-        IAffiliateService: require('./services/IAffiliateService'),
+        IAPIAffiliateService: require('./services/IAPIAffiliateService'),
         IContactService: require('./services/IContactService'),
         IDataService: require('./services/IDataService'),
         IDiscountService: require('./services/IDiscountService'),
