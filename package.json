@@ -1,6 +1,6 @@
 {
   "name": "infusionsoft-javascript-api",
-  "version": "0.3.0",
+  "version": "0.3.1-beta.0",
   "description": "Javscript wrapper for the Infusionsoft XML-RPC API",
   "main": "index.js",
   "scripts": {
@@ -20,11 +20,11 @@
     "url": "https://github.com/justinhandley/infusionsoft-javascript-api/issues"
   },
   "dependencies": {
-    "inflection": "~1.2.6",
-    "q": "~0.9.6",
-    "typedef": "~0.13.2",
-    "underscore": "~1.5.1",
-    "xmlrpc": "~1.1.0"
+    "inflection": "~1.12.0",
+    "q": "~1.5.1",
+    "typedef": "~1.1.0",
+    "underscore": "~1.12.0",
+    "xmlrpc": "~1.3.2"
   },
   "devDependencies": {}
 }
