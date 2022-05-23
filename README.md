@@ -1,5 +1,11 @@
 # Infusionsoft Javascript API
 
+## Looking for a new maintainer!!
+
+:warning: **I will no longer be maintaining this API** - if anyone is interested please send me a message.  I'm more than happy to fully hand over the codebase and walk you through the history and known issues.  I am no longer using Infusionsoft and am not maintaining this as it should be maintained.
+
+---
+
 A promise-driven, fluent-style Node.js wrapper for the XML-RPC [Infusionsoft API](https://developer.infusionsoft.com/docs/xml-rpc).
 
 Extended from Bvalosek's awesome but largely abandoned [Infusionsoft API](https://github.com/bvalosek/infusionsoft-api)
